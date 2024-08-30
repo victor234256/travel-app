@@ -3,7 +3,7 @@ export default function Stats({ items }) {
   if (!items.length)
     return (
       <p className="stats">
-        <em>Start adding some items to your packing list 🚀</em>
+        <em>Start adding some items to your Shopping cart 🛒</em>
       </p>
     );
   const numItems = items.length;
@@ -13,9 +13,9 @@ export default function Stats({ items }) {
     <footer className="stats">
       <em>
         {percentage === 100
-          ? "You got everything! Ready to go ✈"
+          ? "You have bought everything! Ready to go back home 🏠 "
           : `
-        💼 You have ${numItems} items on your list, and you already packed${" "}
+        💼 You have ${numItems} items on your list, and you already bought${" "}
         ${numItemPacked} (${percentage}%)`}
       </em>
     </footer>
